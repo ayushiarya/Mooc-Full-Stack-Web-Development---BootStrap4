@@ -36,13 +36,16 @@
     </nav>
     <header class="jumbotron" >
         <div class="container">
-            <div class="row row-header">
+            <div class="row row-header align-items-center">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-xs-12 col-sm-3 align-self-center">
                     <img src="logo.png" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-sm-3 align-self-center">
+                    <a class="btn btn-sm btn-block btn-warning" href="#reservationForm" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -70,12 +73,17 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-col-md-3">
+            <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-sm col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail justify-content: flex-end " src="buffet.png" alt="Buffet">
+                    <div class="media-body flex-start">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">HOT</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -91,6 +99,61 @@
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reservationForm" class="row row-content align-items-center">
+            <div class="col-12 offset-0 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white"><strong>Reserve A Table</strong></h3>
+                    <div class="card-block">
+                        <form>
+                            <div class="form-group row mt-10">
+                                <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10">
+                                      <label class="radio-inline">
+                                          <input type="radio" name="optradio" value="1" checked> 1
+                                      </label>
+                                      <label class="radio-inline">
+                                        <input type="radio" name="optradio" value="2" > 2
+                                    </label>  
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" value="3" > 3
+                                    </label>  
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" value="4" > 4
+                                    </label>  
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" value="5" > 5
+                                    </label>  
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" value="6" > 6
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastname" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calender" aria-hidden="true"></i>
+                                        </span>
+                                        <input class="form-control" type="date" name="dateBooking" value="" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="input-group">
+                                        <input class="form-control" type="hour" name="hourBooking" value="" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -123,10 +186,10 @@
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedink fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-google fa-lg"></i></a>
                         <a class="btn btn-social-icon " href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
