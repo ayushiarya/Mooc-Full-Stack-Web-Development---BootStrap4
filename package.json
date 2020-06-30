@@ -1,0 +1,39 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assignment1.html",
+  "dependencies": {
+    "@popperjs/core": "^2.4.2",
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.0",
+    "tooltip": "^1.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "scripts": {
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushiarya/exercise.git"
+  },
+  "author": "Ayushi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushiarya/exercise/issues"
+  },
+  "homepage": "https://github.com/ayushiarya/exercise#readme"
+}
