@@ -8,10 +8,12 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     
         <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-        <link rel="stylesheet" href="css/style.css"></link>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- endbuild -->
         
     <title>Ristorante Con Fusion</title>
 </head>
@@ -19,10 +21,10 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="bottom" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="logo.png" alt="logo" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link active" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -42,7 +44,7 @@
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
@@ -79,7 +81,7 @@
         </div>
     </div>
     <div id="reservationForm" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title"><strong>Reserve a Table</strong></h4>
@@ -91,7 +93,7 @@
                     <div class="col-12 offset-0 col-md-8 offset-md-2">
                         <form>
                             <div class="form-group row mt-10">
-                                <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
+                                <label class="col-md-2 col-form-label">Number of Guests</label>
                                 <div class="col-md-10">
                                     <label class="radio-inline">
                                         <input type="radio" name="optradio" value="1" checked> 1
@@ -114,25 +116,25 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="place" class="col-md-2 col-form-label">Section</label>
+                                <label class="col-md-2 col-form-label">Section</label>
                                 <div class="col-md-10">
                                     <button type="submit" class="btn btn-success btn-active ">Non Smoking</button>
                                     <button type="submit" class="btn btn-danger">Smoking</button>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="lastname" class="col-md-2 col-form-label">Date and Time</label>
+                                <label class="col-md-2 col-form-label">Date and Time</label>
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="fa fa-calender" aria-hidden="true"></i>
                                         </span>
-                                        <input class="form-control" type="date" name="dateBooking" value="" placeholder="Date">
+                                        <input class="form-control" type="text" id="date" name="dateBooking" value="" placeholder="Date">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
-                                        <input class="form-control" type="hour" name="hourBooking" value="" placeholder="Time">
+                                        <input class="form-control" type="text" id="time" name="hourBooking" value="" placeholder="Time">
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +159,7 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-xs-12 col-sm-3 align-self-center">
-                    <img src="logo.png" class="img-fluid">
+                    <img src="logo.png" alt="logo" class="img-fluid">
                 </div>
                 <div class="col-xs-12 col-sm-3 align-self-center">
                     <a class="btn btn-sm btn-block btn-warning" 
@@ -324,10 +326,13 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
